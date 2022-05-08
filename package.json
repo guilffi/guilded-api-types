@@ -1,0 +1,28 @@
+{
+  "name": "guilded-api-types",
+  "version": "0.10.0",
+  "description": "The api typings of Guilded API.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc"
+  },
+  "files": [
+    "dist"
+  ],
+  "author": "Colderry",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/guilffi/guilded-api-types"
+  },
+  "keywords": [
+    "guilded",
+    "guilded api",
+    "guilffii",
+    "guilded types"
+  ],
+  "devDependencies": {
+    "typescript": "^4.6.4"
+  }
+}
