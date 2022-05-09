@@ -1,3 +1,6 @@
+export const GatewayVersion = "1";
+export const GatewayURL = "wss://api.guilded.gg";
+
 export type GatewayEvents = "ChatMessageCreated"
     | "ChatMessageUpdated"
     | "ChatMessageDeleted"
