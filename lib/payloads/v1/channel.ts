@@ -1,4 +1,4 @@
-export interface APIChannel {
+export interface APIServerChannel {
     /**
      * The ID of the channel
      */
@@ -7,7 +7,7 @@ export interface APIChannel {
      * The type of channel. This will determine what routes to use for creating content in a channel. 
      * For example, if this "chat", then one must use the routes for creating channel messages
      */
-    type: keyof (typeof ChannelType);
+    type: APIServerChannelTypes;
     /**
      * The name of the channel (min length 1; max length 100)
      */
@@ -58,7 +58,7 @@ export interface APIChannel {
     archievedAt?: string;
 };
 
-export enum ChannelType {
+export enum APIServerChannelType {
     announcements,
     chat,
     calender,
@@ -70,3 +70,5 @@ export enum ChannelType {
     scheduling,
     stream
 };
+
+export type APIServerChannelTypes = keyof typeof APIServerChannelType;
