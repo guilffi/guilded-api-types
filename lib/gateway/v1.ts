@@ -21,7 +21,14 @@ export type GatewayEvents = "ChatMessageCreated"
     | "ListItemUpdated"
     | "ListItemDeleted"
     | "ListItemCompleted"
-    | "ListItemUncompleted"
+    | "ListItemUncompleted";
+
+export interface GatewayStructure {
+    op: GatewayCodes;
+    d?: object;
+    s?: string;
+    t?: string;
+};
 
 export interface GatewayWelcome {
     op: GatewayCodes.Welcome;
