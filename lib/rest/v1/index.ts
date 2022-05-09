@@ -42,3 +42,5 @@ export const Routes = {
         return `/servers/${serverId}/webhooks${id ? `/${id}` : ""}`
     },
 } as const;
+
+export * from "./channel";
