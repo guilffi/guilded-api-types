@@ -1,6 +1,5 @@
 # Folders
 node_modules
-lib
 
 # Files
 tsconfig.json
