@@ -2,8 +2,8 @@ export const APIVersion = "1";
 
 export const RouteBases = {
     API: "https://www.guilded.gg/api",
-    VerAPI: `https://www.guilded.gg/v${APIVersion}`
-};
+    VerAPI: `https://www.guilded.gg/api/v${APIVersion}`
+} as const;
 
 export const Routes = {
     // Channels
@@ -41,4 +41,4 @@ export const Routes = {
     serverWebhook: (serverId: string, id?: string) => {
         return `/servers/${serverId}/webhooks${id ? `/${id}` : ""}`
     },
-};
+} as const;
