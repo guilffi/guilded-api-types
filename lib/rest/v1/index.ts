@@ -44,3 +44,4 @@ export const Routes = {
 } as const;
 
 export * from "./channel";
+export * from "./user";
